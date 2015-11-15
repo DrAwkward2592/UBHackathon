@@ -6,4 +6,11 @@
     <string name="title_activity_page1">Page1</string>
     <string name="title_activity_page2">page2</string>
     <string name="title_activity_page4">page4</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_login">Login</string>
+    <string name="spin">"Choose your type"</string>
+    <string-array name="spinner">
+        <item>Student</item>
+        <item>Tutor</item>
+    </string-array>
 </resources>

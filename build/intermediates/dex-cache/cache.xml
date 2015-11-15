@@ -2,32 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/drawkward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jar="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-c0a1b9eaa091f5fce70aa51229e3794be147d0b4.jar" />
+        sha1="1c1afa0ab2a8197a5da1b36c4167a9e479cb74d9">
+        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/classes-63ab7f3dbb84c9e1e4876383c9e55e2830b7cc81.jar" />
     </item>
     <item
-        jar="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jar="/Users/drawkward/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-2b348deb6957c1a7e1a3adff61ed5c3be0c77d7a.jar" />
-    </item>
-    <item
-        jar="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/classes-96c8fe551232f9159748ee002a99a45eaef6c985.jar" />
-    </item>
-    <item
-        jar="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/classes-8202e1df9f1c45421dcde9bb00bf028db55c3f79.jar" />
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-22fbc14781d2a052579e6396c0f9ae5b67a8a19c.jar" />
     </item>
 
 </items>
