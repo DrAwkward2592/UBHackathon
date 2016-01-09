@@ -2,18 +2,60 @@
 <items version="2" >
 
     <item
-        jar="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.6.0/jars/classes.jar"
+        jar="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1c1afa0ab2a8197a5da1b36c4167a9e479cb74d9">
-        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/classes-63ab7f3dbb84c9e1e4876383c9e55e2830b7cc81.jar" />
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-f59b09949a47c743c017258d28dbaeddd7bbd7d4.jar" />
     </item>
     <item
-        jar="/Users/drawkward/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jar="C:\Users\adity\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-bef9b46116fb4359736695bcf4a776e78ed8fa23.jar" />
+    </item>
+    <item
+        jar="C:\Users\adity\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Users/drawkward/Documents/AndroidStudioProjects/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-22fbc14781d2a052579e6396c0f9ae5b67a8a19c.jar" />
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-dea58c35e7736336f83532dbb1c1d47a89378081.jar" />
+    </item>
+    <item
+        jar="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\classes-cdd8f1b4277ae4598b923c9153e79368cbdb78fb.jar" />
+    </item>
+    <item
+        jar="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\classes-3f6a13c20880a3b20f23dba927d02ede9242980d.jar" />
+    </item>
+    <item
+        jar="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.6.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1c1afa0ab2a8197a5da1b36c4167a9e479cb74d9">
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\classes-ede2790843382f3f170517363025fc730985aaad.jar" />
+    </item>
+    <item
+        jar="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\classes-05f73ecbd3153cc96b04baa27b2ad7d332b79367.jar" />
+    </item>
+    <item
+        jar="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\androidprojects\UB\Tutorfinder\app\build\intermediates\pre-dexed\debug\classes-79b7ed0aaf54e44c831b4152d5fbf419084efd2c.jar" />
     </item>
 
 </items>

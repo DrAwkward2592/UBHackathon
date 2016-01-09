@@ -14,7 +14,7 @@ import android.widget.EditText;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import android.os.AsyncTask;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -27,7 +27,7 @@ import java.net.URL;
 public class Login extends AppCompatActivity {
 
     Button ok;
-    EditText username,password;
+    EditText username, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,9 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ok = (Button)findViewById(R.id.okaybutton);
-        username = (EditText)findViewById(R.id.email);
-        password = (EditText)findViewById(R.id.password);
+        ok = (Button) findViewById(R.id.okaybutton);
+        username = (EditText) findViewById(R.id.email);
+        password = (EditText) findViewById(R.id.password);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -54,38 +54,41 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                new JSONTask().execute("http://127.0.0.1:5000/signin");
+                Intent intent = new Intent(Login.this, page2.class);//(current_javafile.this,filetoshiftto.class)
+                startActivity(intent);
 
-                enableStrictMode();
+            }
+        });
+    }
+}
+        class JSONTask extends AsyncTask<String,String,String>
+        {   HttpURLConnection connection=null;
+                        URL url = null;
 
-                URL url = null;
+            @Override
+            protected String doInBackground(String... params) {
                 try {
-                    url = new URL("http://10.0.3.2:5000/signin");
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-
-//                    urlConnection.setDoOutput(true);
-                    urlConnection.setRequestMethod("POST");
+                    URL url=new URL(params[0]);
+                    connection= (HttpURLConnection)url.openConnection();
+                    connection.setDoOutput(true);
+                    connection.setRequestMethod("POST");
+                    connection.setRequestProperty("Content-Type", "application/json");
+                    connection.setRequestProperty("Accept", "application/json");
+                    connection.connect();
                     JSONObject jsonObject = new JSONObject();
                     try {
                         jsonObject.accumulate("username", "abc");
                         jsonObject.accumulate("password", "xyz");
                         String json = jsonObject.toString();
-                        urlConnection.setRequestProperty("json", json);
-                        urlConnection.setRequestProperty("Content-Type",
-                                "application/json");
-                        urlConnection.connect();
                         DataOutputStream wr = new DataOutputStream(
-                                urlConnection.getOutputStream());
+                                connection.getOutputStream());
                         wr.writeBytes(json);
                         System.out.println(wr);
                         wr.close();
 
-                        InputStream is = urlConnection.getInputStream();
+                        InputStream is = connection.getInputStream();
                         BufferedReader rd = new BufferedReader(new InputStreamReader(is));
-                        Log.d("output",)
                         /*
                         StringBuilder response = new StringBuilder(); // or StringBuffer if not Java 5+
                         String line;
@@ -97,27 +100,24 @@ public class Login extends AppCompatActivity {
 
                     } catch (JSONException e) {
                         e.printStackTrace();
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
                     }
 
-
+                    return null;
+            } catch (MalformedURLException e) {
+                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
 
-                Intent intent = new Intent(Login.this, page2.class);//(current_javafile.this,filetoshiftto.class)
-                    startActivity(intent);
 
-                }
+                return null;
 
-            private void enableStrictMode() {
-                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-
-                StrictMode.setThreadPolicy(policy);
             }
-        });
-
-        
-    }
 
 
-}
+
+        }
+
+

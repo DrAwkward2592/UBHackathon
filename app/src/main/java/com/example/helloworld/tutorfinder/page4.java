@@ -4,13 +4,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class page4 extends AppCompatActivity {
-
+EditText a1,a2,a3,b1,b2,b3,c1,c2,c3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page4);
+        a1=(EditText)findViewById(R.id.a1);
+        a2=(EditText)findViewById(R.id.a2);
+        a3=(EditText)findViewById(R.id.a3);
+        b1=(EditText)findViewById(R.id.b1);
+        b2=(EditText)findViewById(R.id.b2);
+        b3=(EditText)findViewById(R.id.b3);
+        c1=(EditText)findViewById(R.id.c1);
+        c2=(EditText)findViewById(R.id.c2);
+        c3=(EditText)findViewById(R.id.c3);
     }
 
     @Override
